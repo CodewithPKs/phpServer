@@ -8,6 +8,6 @@
         }
     ],
     "require": {
-        "miladrahimi/php-jwt": "3.*"
+        "miladrahimi/php-jwt": "^3.2"
     }
 }
