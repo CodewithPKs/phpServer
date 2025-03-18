@@ -1,0 +1,13 @@
+{
+    "name": "mouliksheth/callapis",
+    "description": "Call APIs Vonage",
+    "authors": [
+        {
+            "name": "Moulik Sheth",
+            "email": "mail@example.com"
+        }
+    ],
+    "require": {
+        "miladrahimi/php-jwt": "3.*"
+    }
+}

@@ -1,0 +1,94 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "3ec1fe93b58dd7b75d361080b41e8501",
+    "packages": [
+        {
+            "name": "miladrahimi/php-jwt",
+            "version": "v3.2.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/miladrahimi/php-jwt.git",
+                "reference": "62bc89a8a008f125074fb68344ee3fc0625c20da"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/miladrahimi/php-jwt/zipball/62bc89a8a008f125074fb68344ee3fc0625c20da",
+                "reference": "62bc89a8a008f125074fb68344ee3fc0625c20da",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "ext-openssl": "*",
+                "php": ">=7.4"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^7|^8|^9"
+            },
+            "suggest": {
+                "ext-sodium": "Sodium extension is required for EdDSA algortihms"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "MiladRahimi\\Jwt\\": "src/",
+                    "MiladRahimi\\Jwt\\Tests\\": "tests/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Milad Rahimi",
+                    "email": "i@miladrahimi.com",
+                    "homepage": "https://miladrahimi.com"
+                }
+            ],
+            "description": "A PHP implementation of JWT (JSON Web Token) generator, parser, verifier, and validator",
+            "homepage": "https://github.com/miladrahimi/php-jwt",
+            "keywords": [
+                "JSON Web Token",
+                "decoder",
+                "encoder",
+                "jwt",
+                "parser",
+                "token",
+                "validator",
+                "verifier"
+            ],
+            "support": {
+                "issues": "https://github.com/miladrahimi/php-jwt/issues",
+                "source": "https://github.com/miladrahimi/php-jwt/tree/v3.2.3"
+            },
+            "funding": [
+                {
+                    "url": "https://miladrahimi.com/pay.html",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://www.paypal.com/paypalme/realmiladrahimi",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/miladrahimi",
+                    "type": "github"
+                }
+            ],
+            "time": "2024-12-22T20:18:18+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": {},
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": {},
+    "platform-dev": {},
+    "plugin-api-version": "2.6.0"
+}
