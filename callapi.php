@@ -13,6 +13,9 @@ require_once "vendor/autoload.php";
 require "config.php";
 
 
+use Firebase\JWT\JWT;
+use Firebase\JWT\Key;
+
 use MiladRahimi\Jwt\Cryptography\Algorithms\Rsa\RS256Signer;
 use MiladRahimi\Jwt\Cryptography\Algorithms\Rsa\RS256Verifier;
 use MiladRahimi\Jwt\Cryptography\Keys\RsaPrivateKey;
@@ -24,10 +27,13 @@ $tono = $_POST['to_number'];
 $selfno = $_POST['self_number'];
 
 // Generate a token
-$privateKey = new RsaPrivateKey('private.key');
+// $privateKey = new RsaPrivateKey('private.key');
 $signer = new RS256Signer($privateKey);
 $generator = new Generator($signer);
-$jwt = $generator->generate(['application_id' => '50c87b6f-90e0-49b6-b5df-d7f00e5950fa', 'iat' => strtotime("now"),  'exp' => strtotime("+30 min"), 'jti' => uniqid() ]);
+// $jwt = $generator->generate(['application_id' => '50c87b6f-90e0-49b6-b5df-d7f00e5950fa', 'iat' => strtotime("now"),  'exp' => strtotime("+30 min"), 'jti' => uniqid() ]);
+
+$privateKey = file_get_contents('private.key');
+$jwt = JWT::encode($payload, $privateKey, 'RS256');
 
 $_SESSION['jwt'] = $jwt;
 $uuid = '';

@@ -8,6 +8,7 @@
         }
     ],
     "require": {
-        "miladrahimi/php-jwt": "^3.2"
+        "miladrahimi/php-jwt": "^3.2",
+        "firebase/php-jwt": "^6.11"
     }
 }
