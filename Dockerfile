@@ -1,5 +1,5 @@
 # Use the official PHP image
-FROM php:7.4-apache
+FROM php:8.4-apache
 
 # Copy application files to the container
 COPY . /var/www/html/
